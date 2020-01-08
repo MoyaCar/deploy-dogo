@@ -1,0 +1,47 @@
+.recuadro-politica {
+  background-image: url(fondos/textura-fondo-Politica.jpg);
+  background-size: cover;
+  .marco-logo {
+    width: 500px;
+    border-color: grey;
+    border-width: medium;
+    border-style: solid;
+  }
+
+  .texto {
+    width: 500px;
+  }
+
+  img {
+    height: 550px;
+    width: 500px;
+  }
+
+  .transparencia {
+    z-index: 3;
+    position: absolute;
+    height: 105px;
+    width: 800px !important;
+    top: 416px;
+    left: 20px;
+    background-color: orange;
+    opacity: 0.5;
+  }
+
+  .separador {
+    width: 32px;
+  }
+  @include media-breakpoint-down(lg) {
+    .texto {
+      width: 400px;
+    }
+    .marco-logo {
+      width: 400px;
+    }
+    img {
+      height: 500px;
+      width: 400px;
+    }
+  }
+}
+

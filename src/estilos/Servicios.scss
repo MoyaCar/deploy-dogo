@@ -1,0 +1,98 @@
+.recuadro-servicios{
+  background-color: #818181;
+
+  .marco-logo {
+    width: 300px;
+    border-color: whitesmoke;
+    border-width: medium;
+    border-style: solid;
+  }
+
+  .icono-info {
+    height: 110px;
+    width: 110px;
+  }
+
+  .caja-texto { 
+    width: 100%;
+    height: 0px;
+    background-color: grey;
+    animation-duration: 300ms;
+    animation-name: slide;
+    animation-fill-mode: forwards;
+    font-size: 0px;
+  }
+
+  @keyframes slide {
+   100% {
+     height: 240px;
+     width: 100%;
+     font-size: 16px;
+   }
+  }
+  
+  .texto-servicios {
+    width: 600px;
+    height: 200px;
+    border-color: white;
+    border-width: thin;
+    border-style: solid;
+    opacity: 0;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+    animation-duration: 400ms;
+    animation-name: texto;
+    visibility: hidden;
+    
+  }
+  @keyframes texto {
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  
+  //estilos de animacion en reversa
+  .esconder {
+    width: 0px;
+    height: 0px;
+    background-color: grey;
+    opacity: 0;
+    animation-duration: 300ms;
+    animation-name: backward;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    font-size: 0px;
+    visibility: hidden;
+  }
+
+  @keyframes backward {
+    100% {
+      height: 200px;
+      width: 600px;
+      opacity: 1;
+    }
+  }
+
+  .esconder-texto {
+    opacity: 0;
+    animation-delay: 300ms;
+    animation-fill-mode: backwards;
+    animation-duration: 400ms;
+    animation-name: backward-text;
+    visibility: hidden;
+    animation-direction: reverse;
+  }
+
+  @keyframes  backward-text {
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  //clase para ocultar del DOM el espacio virtual del DOM
+  .escondido {
+    //display: none;
+    visibility: hidden;
+  }
+}

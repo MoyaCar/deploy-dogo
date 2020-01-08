@@ -1,0 +1,14 @@
+//librerias necesarias 
+//las variables de bootstrap se deben modificar antes de este import
+@import '~bootstrap/scss/bootstrap.scss';
+
+//animaciones varias desde estilos, testear bien
+@import '~animate.css/animate.min.css';
+
+//import desde la carpeta de estilos
+@import './estilos/Navbar.scss';
+@import './estilos/Empresa.scss';
+@import './estilos/Servicios.scss';
+@import './estilos/Politica.scss';
+@import './estilos/Clientes.scss';
+@import './estilos/Contacto.scss';
