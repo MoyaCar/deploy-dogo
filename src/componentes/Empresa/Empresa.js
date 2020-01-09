@@ -39,7 +39,7 @@ function Empresa() {
           </div>       
         </div>
 
-        <div class='d-none d-xl-block col-1'></div>
+        <div class='d-none d-xl-block separador'></div>
 
         <div class='col-12 col-md-10 col-lg-6 col-xl-5 text-center mt-5 mt-lg-0 bloque-derecho'>
           <div class='marco-logo mx-auto mr-lg-auto ml-lg-0 text-white'>
