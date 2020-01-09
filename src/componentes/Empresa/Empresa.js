@@ -13,19 +13,19 @@ function Empresa() {
           <div id="fotos" class="carousel carousel-empresa slide mx-auto ml-lg-auto mr-lg-0 shadow-lg" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src={Foto1} class='foto' alt="Foto1"></img>
+                <img src={Foto1} class='foto img-fluid' data-filter='lark' alt="Foto1"></img>
               </div>
               <div class="carousel-item">
-                <img src={Foto3} class='foto' alt="foto3"/>
+                <img src={Foto3} class='foto img-fluid' data-filter='lark' alt="foto3"/>
               </div>
               <div class="carousel-item">
-                <img src={Foto4} class='foto' alt="foto4"/>
+                <img src={Foto4} class='foto img-fluid' data-filter='lark' alt="foto4"/>
               </div>
               <div class="carousel-item">
-                <img src={Foto5} class='foto' alt="foto5"/>
+                <img src={Foto5} class='foto img-fluid' data-filter='lark' alt="foto5"/>
               </div>
               <div class="carousel-item">
-                <img src={Foto6} class='foto' alt="foto6"/>
+                <img src={Foto6} class='foto img-fluid' data-filter='lark' alt="foto6"/>
               </div>
             </div>
             <a class="carousel-control-prev" href="#fotos" data-slide="prev">

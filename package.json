@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "animate.css": "^3.7.2",
     "bootstrap": "^4.4.1",
+    "cc-gram": "^0.1.5",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
     "jquery": "^3.4.1",
@@ -21,7 +22,7 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

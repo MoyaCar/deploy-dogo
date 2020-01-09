@@ -11,7 +11,7 @@ function Clientes() {
       </div>
       <div class='row justify-content-center'>
         <div class='col-10 text-center'>
-          <img src={ClientesImg} alt='Clientes'/>
+          <img src={ClientesImg} class='img-fluid' alt='Clientes'/>
         </div>
       </div>
     </div>

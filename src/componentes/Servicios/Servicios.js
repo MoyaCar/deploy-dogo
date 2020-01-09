@@ -76,19 +76,19 @@ class Servicios extends React.Component {
           </div>
           <div class='row pt-5 justify-content-center'>
             <div class='col-3 text-center'>
-            <img src={Icono3} class='icono-info mx-auto' onClick={this.changeClass1}/>
+            <img src={Icono3} class='icono-info img-fluid mx-auto' onClick={this.changeClass1}/>
               <div class='mx-auto text-center pt-2'>
                 <h5>{tittle2}</h5>
               </div>
             </div>
             <div class='col-3 text-center'>
-              <img src={Icono2} class='icono-info mx-auto' onClick={this.changeClass2} alt='icono-2' />
+              <img src={Icono2} class='icono-info img-fluid mx-auto' onClick={this.changeClass2} alt='icono-2' />
               <div class='text-center pt-2 '>
                 <h5>{tittle1}</h5>
               </div>
             </div>
             <div class='col-3 text-center'>
-            <img src={Icono1} class='icono-info mx-auto' onClick={this.changeClass3} alt='icono-llave'/>
+            <img src={Icono1} class='icono-info img-fluid mx-auto' onClick={this.changeClass3} alt='icono-llave'/>
               <div class='text-center pt-2'>
                 <h5>{tittle3}</h5>
               </div>

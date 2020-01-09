@@ -23,7 +23,7 @@ function Politica() {
         </div>
 
         <div class='d-none d-lg-block col-lg-6 col-xl-5'>
-          <img src={Foto2} class='foto mx-auto mr-lg-auto ml-lg-0' alt="Foto2"/>
+          <img src={Foto2} class='foto mx-auto mr-lg-auto ml-lg-0 img-fluid' data-filter='lark' alt="Foto2"/>
         </div>
       </div>
     </div>
