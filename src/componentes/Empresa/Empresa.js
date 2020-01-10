@@ -43,7 +43,7 @@ function Empresa() {
 
         <div class='col-12 col-md-10 col-lg-6 col-xl-5 text-center mt-5 mt-lg-0 bloque-derecho'>
           <div class='marco-logo mx-auto mr-lg-auto ml-lg-0 text-white'>
-            <h1>F&GM S.R.L.</h1>
+            <h1>F&GM S.R.L. Caca</h1>
           </div>
           <div class='texto text-justify mx-auto mr-lg-auto ml-lg-0 pt-4 text-white'>
             Un estudio de arquitectura especializado en proyecto dirección y ejecución de obras civiles. Con el propósito de brindar soluciones para la arquitectura corporativa, logrando resultados eficaces; flexibles y creativos asegurando la mayor economía de recursos.
