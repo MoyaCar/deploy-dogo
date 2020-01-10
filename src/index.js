@@ -5,6 +5,8 @@ import * as serviceWorker from './serviceWorker';
 import './index.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import CCGram from "cc-gram";
+import './fonts/BarlowCondensed-Regular.ttf';
+
 
 const cg = new CCGram();
 
