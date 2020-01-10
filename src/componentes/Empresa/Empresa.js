@@ -7,7 +7,7 @@ import Foto6 from './imgs/foto6.jpg';
 
 function Empresa() {
   return (
-    <div class='container-fluid recuadro-empresa'>
+    <div class='container-fluid recuadro-empresa pt-5'>
       <div class='row py-5 justify-content-center'>
         <div class='col-12 col-md-10 col-lg-6 col-xl-5'>
           <div id="fotos" class="carousel carousel-empresa slide mx-auto ml-lg-auto mr-lg-0 shadow-lg" data-ride="carousel">

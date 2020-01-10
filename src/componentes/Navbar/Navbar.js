@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Logo from './imgs/logo.png'
 
 function Navbar() {
  return ( 
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand animated bounce" href="#">FG&M</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbe text-white">
+      <img src={Logo} class="navbar-brand img-fluid logo" href="#"/>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
