@@ -1,6 +1,7 @@
 .recuadro-politica {
   background-image: url(fondos/textura-fondo-Politica.jpg);
   background-size: cover;
+  
   .marco-logo {
     width: 500px;
     //border-color: black;
@@ -15,12 +16,13 @@
   }
 
   img {
+    z-index: 1 !important;
     height: 550px;
     width: 500px;
   }
 
   .transparencia {
-    z-index: 3;
+    z-index: 3 !important;
     position: absolute;
     height: 105px;
     width: 800px !important;
