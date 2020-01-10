@@ -67,6 +67,7 @@ class Servicios extends React.Component {
     render(){
       return(
         <div class='container-fluid recuadro-servicios text-white'>
+          <a class='ancla' id='recuadro-servicios'/>
           <div class='row justify-content-center pt-5'>
             <div class='text-center '>
               <div class='marco-logo mx-auto'>

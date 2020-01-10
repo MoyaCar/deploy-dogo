@@ -1,4 +1,8 @@
 //Acá van todos los estilos generales de la app
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: BarlowCondensed;
 }
@@ -6,4 +10,10 @@ body {
 h1,h2 {
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.ancla {
+  position: relative;
+  top: -88px;
+  visibility: hidden;
 }

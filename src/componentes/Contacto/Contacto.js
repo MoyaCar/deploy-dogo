@@ -4,8 +4,9 @@ import Button from '@material-ui/core/Button';
 
 function Contacto(){
   return (
-    <div class='container-fluid recuadro-contacto py-4'>
-      <div class='row justify-content-center'>
+    <div class='container-fluid recuadro-contacto'>
+      <a class='ancla'id='recuadro-contacto'/>
+      <div class='row justify-content-center pt-4'>
         <div class='col-10'>
           <h2 class='text-center marco-logo mx-auto text-white my-4'>CONTACTO</h2>
         </div>

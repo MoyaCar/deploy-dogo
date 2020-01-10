@@ -4,6 +4,7 @@ import Foto2 from './imgs/foto2.jpg'
 function Politica() {
   return(
     <div class='container-fluid recuadro-politica'>
+      <a class='ancla' id='recuadro-politica'/>
       <div class='row justify-content-center py-5'>
         <div class='col-12 col-md-10 col-lg-6 col-xl-5 text-center bloque-derecho'>
           <div class='marco-logo mx-auto ml-lg-auto mr-lg-0'>
