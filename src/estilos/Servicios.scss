@@ -12,11 +12,11 @@
   .icono-info {
     height: 110px;
     width: 110px;
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   .texto-icono {
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   .caja-texto { 
@@ -41,7 +41,7 @@
     width: 600px;
     height: 200px;
     border-color: white;
-    border-width: thin;
+    border-width: medium;
     border-style: solid;
     opacity: 0;
     animation-delay: 300ms;
@@ -54,7 +54,7 @@
   @keyframes texto {
     100% {
       visibility: visible;
-      opacity: 1;
+      opacity: 0.8;
     }
   }
   
