@@ -26,6 +26,11 @@ function Contacto(){
           <div class='col-12 form-group'>
             <textarea class="form-control recuadro-input mx-auto mb-2" type="text" placeholder="Mensaje" rows='4'/>
           </div>
+          <div class='col-12'>
+            <div class='recuadro-input mx-auto text-right'>
+              <button type="submit" class="btn boton px-4 mb-2">Enviar</button>
+            </div>
+          </div>
         </div>
       </form>
     </div>
