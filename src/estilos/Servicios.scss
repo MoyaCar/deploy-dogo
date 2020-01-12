@@ -122,5 +122,23 @@
       height: 450px !important;
       width: 300px !important;
     }
+
+    .caja-texto { 
+      width: 100%;
+      height: 0px;
+      background-color: grey;
+      animation-duration: 300ms;
+      animation-name: slide;
+      animation-fill-mode: forwards;
+      font-size: 0px;
+    }
+  
+    @keyframes slide {
+     100% {
+       height: 508px;
+       width: 100%;
+       font-size: 16px;
+     }
+    }
   }
 }
