@@ -49,3 +49,15 @@
   }
 }
 
+@include media-breakpoint-down(sm) {
+  .recuadro-politica {
+
+    .marco-logo {
+      width: 300px !important;
+    }
+
+    .texto{
+      width: 300px;
+    }
+  }
+}

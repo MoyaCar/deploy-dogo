@@ -3,7 +3,7 @@ import Logo from './imgs/logo.png'
 
 function Navbar() {
  return ( 
-  <div>
+  <div class='container-fluid'>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light navbe text-white">
       <a href='#recuadro-empresa'>
         <img src={Logo} class="navbar-brand img-fluid logo" href="#recuadro-empresa" alt='Logo'/>

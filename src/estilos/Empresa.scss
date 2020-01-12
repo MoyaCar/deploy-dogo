@@ -54,17 +54,23 @@
   }
  }
 
- @include media-breakpoint-down(xs) {
+ @include media-breakpoint-down(sm) {
+  .recuadro-empresa {
+    .carousel-empresa {
+      width: 300px !important;
+      height: 360px !important;
+    }
 
-  .carousel-empresa {
-    width: 200px;
-  }
+    img {
+      width: 300px !important;
+      height: 360px !important;
+    }
+    .marco-logo {
+      width: 300px !important;
+    }
 
-  .marco-logo {
-    width: 200px;
-  }
-
-  .texto {
-    width: 200px;
+    .texto {
+      width: 300px !important;
+    }
   }
  }
