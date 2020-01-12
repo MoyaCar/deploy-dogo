@@ -23,47 +23,52 @@ class Servicios extends React.Component {
       title: '',
       escondido: 'escondido'
     };
-    this.close = this.close.bind(this);
-    this.open = this.open.bind(this);
-    this.esconder = this.esconder.bind(this);
     this.changeClass1 = this.changeClass1.bind(this);
     this.changeClass2 = this.changeClass2.bind(this);
     this.changeClass3 = this.changeClass3.bind(this);
   }
     changeClass1(){
-      if (this.state.class !== 'texto1'){
-        this.setState({title:tittle1, texto: textos1, class: 'text1'});
-        this.open();
-      }
+      this.setState(prevState=>{
+        if (prevState.class != 'texto1' && !prevState.open ){
+          return {title:tittle1, texto: textos1, class: 'texto1', open: true}
+        }if (prevState.class == 'texto1' && prevState.open){
+          return {escondido:'esconder', open: false}
+        }if (prevState.class != 'texto1' && prevState.open){
+          return {title:tittle1, texto: textos1, class: 'texto1', open: true}
+        }if (prevState.class == 'texto1' && !prevState.open ){
+          return {open:true}
+        }
+      });
     }
 
     changeClass2(){
-      if (this.state.class !== 'texto2'){
-        this.setState({title:tittle2, texto: textos2, class: 'text2'});
-        this.open();
-      }
+      this.setState(prevState=>{
+        if (prevState.class != 'texto2' && !prevState.open ){
+          return {title:tittle2, texto: textos2, class: 'texto2', open: true}
+        }if (prevState.class == 'texto2' && prevState.open){
+          return {escondido:'esconder', open: false}
+        }if (prevState.class != 'texto2' && prevState.open){
+          return {title:tittle2, texto: textos2, class: 'texto2', open: true}
+        }if (prevState.class == 'texto2' && !prevState.open ){
+          return {open:true}
+        }
+      });
     }
 
     changeClass3(){
-      if (this.state.class !== 'texto3'){
-        this.setState({title:tittle3, texto: textos3, class: 'text3'});
-        this.open();
-      }
+      this.setState(prevState=>{
+        if (prevState.class != 'texto3' && !prevState.open ){
+          return {title:tittle3, texto: textos3, class: 'texto3', open: true}
+        }if (prevState.class == 'texto3' && prevState.open){
+          return {escondido:'esconder', open: false}
+        }if (prevState.class != 'texto3' && prevState.open){
+          return {title:tittle3, texto: textos3, class: 'texto3', open: true}
+        }if (prevState.class == 'texto3' && !prevState.open ){
+          return {open:true}
+        }
+      });
     }
 
-    open() {
-      this.setState({open:true});
-    }
-
-    close() {
-      this.esconder()
-      this.setState({open:false});
-    }
-
-    esconder() {
-      this.setState({escondido:'esconder'})
-    }
-    
     render(){
       return(
         <div class='container-fluid recuadro-servicios text-white'>

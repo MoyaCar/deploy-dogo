@@ -13,10 +13,18 @@
     height: 110px;
     width: 110px;
     opacity: 0.8;
+    cursor: pointer;
+    transition-duration: 0.25s;
+  }
+
+  .icono-info:hover {
+    opacity: 1;
+    transition-duration: 0.25s;
   }
 
   .texto-icono {
     opacity: 0.8;
+    cursor: pointer;
   }
 
   .caja-texto { 
