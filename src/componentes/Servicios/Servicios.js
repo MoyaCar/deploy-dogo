@@ -84,19 +84,19 @@ class Servicios extends React.Component {
             <div class='col-3 text-center'>
             <img src={Icono3} class='icono-info img-fluid mx-auto' onClick={this.changeClass1} alt='icono engranaje'/>
               <div class='mx-auto text-center pt-2'>
-                <h5 class='texto-icono'>{tittle2}</h5>
+                <h5 class='texto-icono d-none d-md-block'>{tittle2}</h5>
               </div>
             </div>
             <div class='col-3 text-center'>
               <img src={Icono2} class='icono-info img-fluid mx-auto' onClick={this.changeClass2} alt='icono disenio'/>
               <div class='text-center pt-2 '>
-                <h5 class='texto-icono'>{tittle1}</h5>
+                <h5 class='texto-icono d-none d-md-block'>{tittle1}</h5>
               </div>
             </div>
             <div class='col-3 text-center'>
             <img src={Icono1} class='icono-info img-fluid mx-auto' onClick={this.changeClass3} alt='icono llave'/>
               <div class='text-center pt-2'>
-                <h5 class='texto-icono'>{tittle3}</h5>
+                <h5 class='texto-icono d-none d-md-block'>{tittle3}</h5>
               </div>
             </div>
 
@@ -104,8 +104,8 @@ class Servicios extends React.Component {
           <div class='row justify-content-center pt-5'>
             <div class={this.state.open?'caja-texto text-center mx-auto' :this.state.escondido} onClick={this.close}>
               <div class={this.state.open?'texto-servicios mx-auto px-4 py-4': 'esconder-texto'}>
-                <p class='font-weight-bold'>{this.state.title}</p>
-                <p class='text-justify'>{this.state.texto}</p>
+                <p class='d-block d-md-none font-weight-bold'>{this.state.title}</p>
+                <p class='text-justify '>{this.state.texto}</p>
               </div>
             </div>
           </div>

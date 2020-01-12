@@ -110,3 +110,17 @@
     visibility: hidden;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .recuadro-servicios {
+
+    .icono-info {
+      height: 80px;
+      width: 80px;
+    }
+    .texto-servicios {
+      height: 450px !important;
+      width: 300px !important;
+    }
+  }
+}
