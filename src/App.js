@@ -7,6 +7,8 @@ import Politica from './componentes/Politica/Politica';
 import Clientes from './componentes/Clientes/Clientes';
 import Contacto from './componentes/Contacto/Contacto';
 
+
+
 function App() {
   return (
     <div>
