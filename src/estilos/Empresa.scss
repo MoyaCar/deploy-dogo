@@ -48,7 +48,23 @@
 }
 
 @include media-breakpoint-down(lg) {
+
   .transparencia {
     width: 550px !important;
+  }
+ }
+
+ @include media-breakpoint-down(xs) {
+
+  .carousel-empresa {
+    width: 200px;
+  }
+
+  .marco-logo {
+    width: 200px;
+  }
+
+  .texto {
+    width: 200px;
   }
  }
