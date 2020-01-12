@@ -76,7 +76,7 @@
     100% {
       height: 200px;
       width: 600px;
-      opacity: 1;
+      opacity: 0.8;
     }
   }
 
@@ -93,7 +93,7 @@
   @keyframes  backward-text {
     100% {
       visibility: visible;
-      opacity: 1;
+      opacity: 0.8;
     }
   }
   //clase para ocultar del DOM el espacio virtual del DOM
