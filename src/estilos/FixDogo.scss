@@ -48,6 +48,16 @@ body{
     color:#4a4a4a!important;
     background-color: rgba(255, 255, 255, .5)!important;
 }
+@media(max-width:767.98px){
+    .recuadro-servicios .caja-texto {
+
+        width: auto;
+        height: auto;
+        min-width: 400px;
+        min-height: 200px;
+
+    }
+}
 /*Politica*/
 .recuadro-politica .texto, .recuadro-empresa .bloque-derecho .texto {
   padding: 20px!important;
