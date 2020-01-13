@@ -15,11 +15,33 @@ body{
     background-color: #d2c717!important;
     opacity: 0.6!important;
 }
+/*Empresa*/
+@media(max-width:480px){
+    .recuadro-empresa .bloque-derecho .marco-logo{
+        display: none
+    }
+}
+/*servicios*/
+.recuadro-servicios .texto-servicios {
+    width: 80%!important;
+    min-height: 100px!important;
+    height: auto!important;
+    font-size: 20px!important;
+    border: none!important;
+    border-radius:25px!important; 
+    color:#4a4a4a!important;
+    background-color: rgba(255, 255, 255, .5)!important;
+}
 /*Politica*/
 .recuadro-politica .texto, .recuadro-empresa .bloque-derecho .texto {
-  padding: 20px;
+  padding: 20px!important;
+}
+.recuadro-politica .transparencia {
+    bottom: 15px;
+    top: unset;
+    left: unset;
 }
 /*contacto*/
 .recuadro-contacto {
- background-color: #4a4a4a;
+ background-color: #4a4a4a!important;
 }
