@@ -25,6 +25,18 @@ body{
     display:none!important;
 }
 /*servicios*/
+.recuadro-servicios .icono-info {
+    height: auto!important;
+    width: 110px;
+}
+@include media-breakpoint-down(sm) {
+  .recuadro-servicios {
+
+    .icono-info {
+      height: auto!important;
+      width: 80px;
+    }
+  }
 .recuadro-servicios .texto-servicios {
     width: 80%!important;
     min-height: 100px!important;
