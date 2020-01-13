@@ -21,6 +21,9 @@ body{
         display: none
     }
 }
+.carousel-control-prev, .carousel-control-next{
+    display:none!important;
+}
 /*servicios*/
 .recuadro-servicios .texto-servicios {
     width: 80%!important;
