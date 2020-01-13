@@ -16,10 +16,10 @@ body{
     opacity: 0.6!important;
 }
 /*Politica*/
-.recuadro-politica .texto {
-  padding: 15px;
+.recuadro-politica .texto, .recuadro-empresa .bloque-derecho .texto {
+  padding: 20px;
 }
-
+/*contacto*/
 .recuadro-contacto {
  background-color: #4a4a4a;
 }
