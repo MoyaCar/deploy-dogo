@@ -69,3 +69,12 @@ body{
 .recuadro-contacto {
  background-color: #4a4a4a!important;
 }
+
+@media(max-width:767.98px){
+    .recuadro-contacto  .marco-logo, .recuadro-contacto .recuadro-input {
+
+        width: 80% !important;
+
+    }
+
+}
