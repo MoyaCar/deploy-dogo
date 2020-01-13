@@ -49,13 +49,11 @@ body{
     background-color: rgba(255, 255, 255, .5)!important;
 }
 @media(max-width:767.98px){
-    .recuadro-servicios .caja-texto {
+    .recuadro-servicios .texto-servicios {
 
-        width: auto;
-        height: auto;
-        min-width: 400px;
-        min-height: 200px;
-
+        width: 96% !important;
+        min-height: 100px !important;
+        
     }
 }
 /*Politica*/
