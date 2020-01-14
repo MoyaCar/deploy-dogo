@@ -106,9 +106,9 @@ class Servicios extends React.Component {
             </div>
             <div class={this.state.open?'boton-cerrar animated fadeIn slow': 'boton-off'} onClick={this.close} href="#recuadro-servicios">
               <a href="#recuadro-servicios">
-              <i class='material-icons flecha'>
-                keyboard_arrow_up
-              </i>
+                <i class='material-icons flecha'>
+                  keyboard_arrow_up
+                </i>
               </a>
             </div>
           </div>
