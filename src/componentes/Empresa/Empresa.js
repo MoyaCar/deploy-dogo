@@ -10,7 +10,7 @@ function Empresa() {
     <div class='container-fluid recuadro-empresa pt-5' id='recuadro-empresa'>
       <div class='row py-5 justify-content-center'>
         <div class='col-12 col-md-10 col-lg-6 col-xl-5'>
-          <div id="fotos" class="carousel carousel-empresa slide mx-auto ml-lg-auto mr-lg-0 shadow-lg" data-ride="carousel">
+          <div id="fotos" class="carousel carousel-empresa slide mx-auto ml-lg-auto mr-lg-0 shadow-lg animated fadeInLeft" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src={Foto1} class='foto img-fluid' data-filter='lark' alt="Foto1"></img>
@@ -34,15 +34,17 @@ function Empresa() {
             <a class="carousel-control-next" href="#fotos" data-slide="next">
               <span class="carousel-control-next-icon"></span>
             </a>
-            <div class='d-none d-lg-block transparencia'>
+            <div class='animated fadeIn slower'>
+              <div class='d-none d-lg-block transparencia'>
+              </div>
             </div>
           </div>       
         </div>
 
         <div class='d-none d-xl-block separador'></div>
 
-        <div class='col-12 col-md-10 col-lg-6 col-xl-5 text-center mt-5 mt-lg-0 bloque-derecho'>
-          <div class='marco-logo mx-auto mr-lg-auto ml-lg-0 text-white'>
+        <div class='col-12 col-md-10 col-lg-6 col-xl-5 text-center mt-5 mt-lg-0 bloque-derecho animated fadeInRight' >
+          <div class='marco-logo mx-auto mr-lg-auto ml-lg-0 text-white '>
             <h1>F&GM S.R.L.</h1>
           </div>
           <div class='texto text-justify mx-auto mr-lg-auto ml-lg-0 pt-4 text-white'>

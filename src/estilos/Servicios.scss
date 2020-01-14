@@ -109,6 +109,27 @@
     //display: none;
     visibility: hidden;
   }
+
+  .boton-off {
+    visibility: hidden;
+  }
+
+  .boton-cerrar {
+    cursor: pointer;
+
+    .flecha {
+      opacity: 0.8;
+    }
+    
+    .flecha:hover {
+      opacity: 1;
+    }
+
+    a {
+      color:inherit;
+      text-decoration: none;
+     }
+  }
 }
 
 @include media-breakpoint-down(sm) {

@@ -26,16 +26,17 @@ class Servicios extends React.Component {
     this.changeClass1 = this.changeClass1.bind(this);
     this.changeClass2 = this.changeClass2.bind(this);
     this.changeClass3 = this.changeClass3.bind(this);
+    this.close = this.close.bind(this);
   }
     changeClass1(){
       this.setState(prevState=>{
-        if (prevState.class != 'texto1' && !prevState.open ){
-          return {title:tittle1, texto: textos1, class: 'texto1', open: true}
-        }if (prevState.class == 'texto1' && prevState.open){
+        if (prevState.class != 'texto1 animated fadeInDown faster' && !prevState.open ){
+          return {title:tittle1, texto: textos1, class: 'texto1 animated fadeInDown faster', open: true}
+        }if (prevState.class == 'texto1 animated fadeInDown faster' && prevState.open){
           return {escondido:'esconder', open: false}
-        }if (prevState.class != 'texto1' && prevState.open){
-          return {title:tittle1, texto: textos1, class: 'texto1', open: true}
-        }if (prevState.class == 'texto1' && !prevState.open ){
+        }if (prevState.class != 'texto1 animated fadeInDown faster' && prevState.open){
+          return {title:tittle1, texto: textos1, class: 'texto1 animated fadeInDown faster', open: true}
+        }if (prevState.class == 'texto1 animated fadeInDown faster' && !prevState.open ){
           return {open:true}
         }
       });
@@ -43,13 +44,13 @@ class Servicios extends React.Component {
 
     changeClass2(){
       this.setState(prevState=>{
-        if (prevState.class != 'texto2' && !prevState.open ){
-          return {title:tittle2, texto: textos2, class: 'texto2', open: true}
-        }if (prevState.class == 'texto2' && prevState.open){
+        if (prevState.class != 'texto2 animated fadeIn' && !prevState.open ){
+          return {title:tittle2, texto: textos2, class: 'texto2 animated fadeIn', open: true}
+        }if (prevState.class == 'texto2 animated fadeIn' && prevState.open){
           return {escondido:'esconder', open: false}
-        }if (prevState.class != 'texto2' && prevState.open){
-          return {title:tittle2, texto: textos2, class: 'texto2', open: true}
-        }if (prevState.class == 'texto2' && !prevState.open ){
+        }if (prevState.class != 'texto2 animated fadeIn' && prevState.open){
+          return {title:tittle2, texto: textos2, class: 'texto2 animated fadeIn', open: true}
+        }if (prevState.class == 'texto2 animated fadeIn' && !prevState.open ){
           return {open:true}
         }
       });
@@ -57,16 +58,20 @@ class Servicios extends React.Component {
 
     changeClass3(){
       this.setState(prevState=>{
-        if (prevState.class != 'texto3' && !prevState.open ){
-          return {title:tittle3, texto: textos3, class: 'texto3', open: true}
-        }if (prevState.class == 'texto3' && prevState.open){
+        if (prevState.class != 'texto3 animated fadeInUp faster' && !prevState.open ){
+          return {title:tittle3, texto: textos3, class: 'texto3 animated fadeInUp faster', open: true}
+        }if (prevState.class == 'texto3 animated fadeInUp faster' && prevState.open){
           return {escondido:'esconder', open: false}
-        }if (prevState.class != 'texto3' && prevState.open){
-          return {title:tittle3, texto: textos3, class: 'texto3', open: true}
-        }if (prevState.class == 'texto3' && !prevState.open ){
+        }if (prevState.class != 'texto3 animated fadeInUp faster' && prevState.open){
+          return {title:tittle3, texto: textos3, class: 'texto3 animated fadeInUp faster', open: true}
+        }if (prevState.class == 'texto3 animated fadeInUp faster' && !prevState.open ){
           return {open:true}
         }
       });
+    }
+
+    close(){
+      this.setState({escondido:'esconder', open: false});
     }
 
     render(){
@@ -82,31 +87,29 @@ class Servicios extends React.Component {
           </div>
           <div class='row pt-5 justify-content-center'>
             <div class='col-3 text-center'>
-            <img src={Icono3} class='icono-info img-fluid mx-auto' onClick={this.changeClass1} alt='icono engranaje'/>
-              <div class='mx-auto text-center pt-2'>
-                <h5 class='texto-icono d-none d-md-block'>{tittle2}</h5>
-              </div>
+              <img src={Icono3} class='icono-info img-fluid mx-auto' onClick={this.changeClass1} alt='icono engranaje'/>
             </div>
             <div class='col-3 text-center'>
               <img src={Icono2} class='icono-info img-fluid mx-auto' onClick={this.changeClass2} alt='icono disenio'/>
-              <div class='text-center pt-2 '>
-                <h5 class='texto-icono d-none d-md-block'>{tittle1}</h5>
-              </div>
             </div>
             <div class='col-3 text-center'>
-            <img src={Icono1} class='icono-info img-fluid mx-auto' onClick={this.changeClass3} alt='icono llave'/>
-              <div class='text-center pt-2'>
-                <h5 class='texto-icono d-none d-md-block'>{tittle3}</h5>
-              </div>
+              <img src={Icono1} class='icono-info img-fluid mx-auto' onClick={this.changeClass3} alt='icono llave'/>
             </div>
 
           </div>
           <div class='row justify-content-center pt-5'>
-            <div class={this.state.open?'caja-texto text-center mx-auto' :this.state.escondido} onClick={this.close}>
+            <div class={this.state.open?'caja-texto text-center mx-auto' :this.state.escondido}>
               <div class={this.state.open?'texto-servicios mx-auto px-4 py-4': 'esconder-texto'}>
-                <p class='d-block d-md-none font-weight-bold'>{this.state.title}</p>
-                <p class='text-justify '>{this.state.texto}</p>
+                <p class={'font-weight-bold ' + this.state.class}>{this.state.title}</p>
+                <p class={'text-justify '+ this.state.class}>{this.state.texto}</p>
               </div>
+            </div>
+            <div class={this.state.open?'boton-cerrar animated fadeIn slow': 'boton-off'} onClick={this.close} href="#recuadro-servicios">
+              <a href="#recuadro-servicios">
+              <i class='material-icons flecha'>
+                keyboard_arrow_up
+              </i>
+              </a>
             </div>
           </div>
         </div>
