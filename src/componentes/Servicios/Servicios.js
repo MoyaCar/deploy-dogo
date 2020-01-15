@@ -89,7 +89,7 @@ class Servicios extends React.Component {
           </div>
           <div class='row pt-5 justify-content-center'>
             <div class='col-3 text-center'>
-              <a id="popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">
+              <a id="popoverData"  data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">
               <img src={Icono3} class='icono-info img-fluid mx-auto' onClick={this.changeClass1} alt='icono engranaje'/>
               </a>
             </div>
