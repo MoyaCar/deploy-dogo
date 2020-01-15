@@ -1,6 +1,4 @@
 import React from 'react';
-const nodemailer = require('nodemailer');
-const log = console.log;
 
 
 class Contacto extends React.Component{
