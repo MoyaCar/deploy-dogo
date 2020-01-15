@@ -70,15 +70,16 @@ body{
 }
 .recuadro-servicios .caja-texto {
     position: relative;
+    padding-top: 13px;
 }
 .recuadro-servicios .boton-cerrar {
     position: absolute;
-    opacity:0.7;
+    right: 13%;
     background:  #1c1c1c;
     border-radius: 50%;
     width: 25px;
     height: 25px;
-    
+    margin: 13px 0 0 0;
 
 }
 /*Politica*/
