@@ -10,7 +10,7 @@ function Empresa() {
     <div class='container-fluid recuadro-empresa pt-5' id='recuadro-empresa'>
       <div class='row py-5 justify-content-center'>
         <div class='col-12 col-md-10 col-lg-6 col-xl-5'>
-          <div id="fotos" class="carousel carousel-empresa slide mx-auto ml-lg-auto mr-lg-0 shadow-lg animated fadeInLeft" data-ride="carousel">
+          <div id="fotos" class="carousel carousel-empresa slide mx-auto ml-lg-auto mr-lg-0 shadow-lg animated fadeInLeft slower" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src={Foto1} class='foto img-fluid' data-filter='lark' alt="Foto1"></img>
