@@ -59,6 +59,7 @@ body{
     border-radius:25px!important; 
     color:#4a4a4a!important;
     background-color: rgba(255, 255, 255, .5)!important;
+    padding: 35PX 0!important;
 }
 @media(max-width:767.98px){
     .recuadro-servicios .texto-servicios {
@@ -70,7 +71,6 @@ body{
 }
 .recuadro-servicios .caja-texto {
     position: relative;
-    padding-top: 13px;
 }
 .recuadro-servicios .boton-cerrar {
     position: absolute;
@@ -79,7 +79,7 @@ body{
     border-radius: 50%;
     width: 25px;
     height: 25px;
-    margin: 13px 0 0 0;
+    margin: 5px 0 0 0;
 
 }
 /*Politica*/
