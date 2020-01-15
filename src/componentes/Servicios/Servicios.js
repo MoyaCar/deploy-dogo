@@ -75,8 +75,6 @@ class Servicios extends React.Component {
     }
     
     render(){
-      $('#popoverData').popover();
-      $('#popoverOption').popover({ trigger: "hover" });
       return(
         <div class='container-fluid recuadro-servicios text-white'>
           <a class='ancla' id='recuadro-servicios'/>
@@ -89,15 +87,13 @@ class Servicios extends React.Component {
           </div>
           <div class='row pt-5 justify-content-center'>
             <div class='col-3 text-center'>
-              <a id="popoverData"  data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover">
-              <img src={Icono3} class='icono-info img-fluid mx-auto' onClick={this.changeClass1} alt='icono engranaje'/>
-              </a>
+              <img src={Icono3} class='icono-info img-fluid mx-auto' onClick={this.changeClass1} alt='Dirección y Gerenciamiento de Obra'/>              
             </div>
             <div class='col-3 text-center'>
-              <img src={Icono2} class='icono-info img-fluid mx-auto' onClick={this.changeClass2} alt='icono disenio'/>
+              <img src={Icono2} class='icono-info img-fluid mx-auto' onClick={this.changeClass2} alt='Diseño de Espacios, Arquitectura e Instalaciones'/>
             </div>
             <div class='col-3 text-center'>
-              <img src={Icono1} class='icono-info img-fluid mx-auto' onClick={this.changeClass3} alt='icono llave'/>
+              <img src={Icono1} class='icono-info img-fluid mx-auto' onClick={this.changeClass3} alt='Construcción Llave en Mano'/>
             </div>
 
           </div>
