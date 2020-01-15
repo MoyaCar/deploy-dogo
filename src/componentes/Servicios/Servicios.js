@@ -73,8 +73,10 @@ class Servicios extends React.Component {
     close(){
       this.setState({escondido:'esconder', open: false});
     }
-
+    
     render(){
+      $('#popoverData').popover();
+      $('#popoverOption').popover({ trigger: "hover" });
       return(
         <div class='container-fluid recuadro-servicios text-white'>
           <a class='ancla' id='recuadro-servicios'/>
