@@ -68,6 +68,19 @@ body{
         
     }
 }
+.recuadro-servicios .caja-texto {
+    position: relative;
+}
+.recuadro-servicios .boton-cerrar {
+    position: absolute;
+    right: 13%;
+    background:  #1c1c1c;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 13px 0 0 0;
+
+}
 /*Politica*/
 .recuadro-politica .texto, .recuadro-empresa .bloque-derecho .texto {
   padding: 20px!important;
