@@ -34,6 +34,7 @@ class Contacto extends React.Component{
       variables
       ).then(res => {
         console.log('Email successfully sent!')
+        alert("Mensaje enviado")
       })
       // Handle errors here however you like, or use a React error boundary
       .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
@@ -66,7 +67,6 @@ class Contacto extends React.Component{
             <div class='col-12'>
               <div class='recuadro-input mx-auto text-right'>
                 <button type="submit" class="btn boton px-4 mb-2">Enviar</button>
-                {this.state.text}
               </div>
             </div>
           </div>
